@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Curso-Python</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+		<script src="./js/script.js"></script>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 1: Introducción a Python </h3>
+					<h4 style="font-size:30px"> Marzo de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Presentación</li>
+						<li>¿Qué es la programación y que es Python?</li>
+						<li>Instalación y configuración del entorno de trabajo</li>
+						<li>Fundamentos de Visual Studio Code</li>
+						<li>Mi Primer Hola Mundo en Python</li>
+						<li>Objetivo del curso: Caso Práctico</li>
+						<li>Presentación del repositorio de Git-Hub</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Presentación</h2>
+					<ul style="list-style-type:'😎'">
+						<li>Economista de la UN</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Presentación</h2>
+					<ul style="list-style-type:'😎'">
+						<li>Economista de la UN</li>
+							<ul style="list-style-type:'🐱‍👤'">
+								<li>Tesis de descomposición de la pobreza en pregrado</li>
+							</ul>
+							<ul style="list-style-type:'🐱‍👤'">
+								<li>Adicto a los videojuegos</li>
+								<li>Entusiasta de la programación</li>
+								<li>Me gusta enseñar y aprender</li>
+							</ul>
+					</ul>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2 style="font-size:40px">¿Qué es la programación y qué es Python?</h2>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:40px">¿Qué es la programación y qué es Python?</h2>
+					<p class="fragment" style="text-align: justify; font-size:40px">La programación es una herramienta para indicar instrucciones precisas por medio del lenguaje computacional a un sistema (como nuestra computadora) para que realice acciones especificas.</p>
+					<p class="fragment fade-in-then-out" style="text-align: justify; font-size:40px">Python es un lenguaje de programación utilizado para desarrollar todo tipo de instrucciones y aplicaciones. </p>
+					<p class="fragment highlight-blue" style="text-align: justify; font-size:40px"> "Si puedes imaginarlo, puedes programarlo"</p>
+					<p class="fragment fade-in-then-out" style="text-align: justify; font-size:40px">Programación ATS</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 style="font-size:40px">Instalación y configuración del entorno de trabajo</h2>
+					<img style="width: 40%"src="https://media0.giphy.com/media/LoCDk7fecj2dwCtSB3/giphy.gif?cid=ecf05e47ih4ifoc7ur61765dfqnwsdjpzzebmurkcj8zn7si&rid=giphy.gif&ct=g" alt="Meme ramdom">
+					<br>
+					<a href="https://www.python.org/downloads/" target="_blank">Python |</a>
+					<a href="https://visualstudio.microsoft.com/es/downloads/" target="_blank">VS Code</a>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Mi primer "Hola Mundo" en Python</h2>
+					<pre> <code data-trim data-noescape>
+						a = "Hola Mundo"
+						print(a)
+					</code></pre>
+				</section>
+
+				<section>
+					Caso Práctico: Ejemplos motivantes
+					<br>
+					Veamos unos ejemplos de usos de Python...
+					<br>
+					<a href="https://kin-george.github.io/First-web/" target="_blank">Mi primera Pagina Web</a>
+					<br>
+				</section>
+
+				<section>
+					Presentación del repositorio
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Repositorio de GitHub</a>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 2: Tipo de variables - Estructuras de Datos y operaciones básicas </h3>
+					<h4 style="font-size:30px"> Marzo de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Variables básicas: String, float, boolean, int</li>
+						<li>Manejo de variables: Métodos</li>
+						<li>Estructura de Datos: listas, diccionarios, tuplas </li>
+						<li>Operaciones básicas en python</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia y registro - Grupo de Discord</h2>
+					<a href="https://tananeo.uninorte.edu.co//marketplace/servicios/analisisdedatosphyton" target="_blank">Registro Oficial</a>
+					<br>
+					<a href="https://forms.gle/M51UUr7oV3TQNnbT8" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://discord.gg/XVSf4xzv" target="_blank">Grupo de Discord</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Variables básicas</h2>
+					<ul style="list-style-type:'😎'">
+						<li>Tipos de variables</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Variables básicas</h2>
+					<ul style="list-style-type:'😎'">
+						<li>Tipos de variables</li>
+							<ul style="list-style-type:'🐱‍👤'">
+								<li>Strings</li>
+							</ul>
+							<ul style="list-style-type:'🐱‍👤'">
+								<li>Booleans</li>
+								<li>Ints</li>
+								<li>Floats</li>
+							</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">String o cadenas de texto</h2>
+					<p style="text-align: justify;">Son variables de tipo alfabeticas, es decir, texto plano. </p>
+					<pre> <code data-trim data-noescape>
+						a = "Hola Mundo"
+						b = "Esta clase es aburrida."
+						c = esta clase no es aburrida.
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Floats o numeros decimales</h2>
+					<p style="text-align: justify;">Son variables de tipo numerica, con parte entera y decimal. </p>
+					<pre> <code data-trim data-noescape>
+						a = 12.5
+						b = 0.30
+						c = "0.55"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Boolean o variables falso/verdadero</h2>
+					<p style="text-align: justify;">Son variables de tipo condicional, falso o verdadero. </p>
+					<pre> <code data-trim data-noescape>
+						a = False
+						b = True
+						c = "True"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Int o numeros enteros</h2>
+					<p style="text-align: justify;">Son variables de tipo numerico, solo con parte entera. </p>
+					<pre> <code data-trim data-noescape>
+						a = 150
+						b = 300
+						c = "500"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Manejo de variables: Métodos</h2>
+					<p style="text-align: justify;">Son funciones que nos permiten manipular los diferentes tipos de variables de manera sencilla y eficaz. </p>
+					<pre> <code data-trim data-noescape>
+						#Veamos algunos ejemplos: Strings: lowerCase, upperCase, Capital, etc
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Estructura de datos</h2>
+					<p style="text-align: justify;"> Son los diferentes formatos que tiene python para organizar los datos de manera estructurada: Listas, tuplas y diccionarios. </p>
+					<pre> <code data-trim data-noescape>
+						#Listas: son arreglos que contienen filas y columnas indexadas.
+						#Tuplas: son vectores inmutables que contienen valores.
+						#Diccionarios: Son arreglos que contienen filas y 
+						#columnas con un valor key asignado.
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Operaciones básicas</h2>
+					<p style="text-align: justify;"> Operaciones aritmeticas realizadas con python </p>
+					<pre> <code data-trim data-noescape>
+						#Suma
+						#Resta
+						#Division
+						#Multiplicacion
+						#Potencia
+						#Raiz
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 3: Condicionales, Bucles y operadores </h3>
+					<h4 style="font-size:30px"> Marzo de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Operadores</li>
+						<li>Ciclos</li>
+						<li>Funciones</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/1pnp93CQtsNW5tyh7" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://discord.gg/XVSf4xzv" target="_blank">Grupo de Discord</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Operadores</h2>
+					<ul style="list-style-type:'😎'">
+						<li>Tipos de operadores</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Operadores</h2>
+					<ul style="list-style-type:'😎'">
+						<li>Tipos de operadores & Condicionales</li>
+							<ul style="list-style-type:'🐱‍👤'">
+								<li>Operadores de asignación</li>
+								<li>Operadores de comparación</li>
+							</ul>
+							<ul style="list-style-type:'🐱‍👤'">
+								<li>Sentencias Condicionales</li>
+								<li>Operadores lógicos</li>
+								<li>Operadores de pertenencia</li>
+							</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Operadores de asignación</h2>
+					<p style="text-align: justify;">Son una manera efectiva de realizar una operación y almacenar su resultado en la variable inicial.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6">
+						# Operador de asignacion
+						"=" # Asigna un valor a una variable.
+						"+=" # asigna un valor de suma a una variable.
+						"-=" # asigna un valor de resta a una variable.
+						"*=" # asigna un valor de multiplicacion a una variable.
+						"/=" # asigna un valor de division a una variable.
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Operadores de comparación</h2>
+					<p style="text-align: justify;">Se utilizan para comparar dos o más valores.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6|7">
+						# Operador de comparación
+						> # Mayor que:
+						>= # Mayor o igual que:
+						< # Menor que:
+						<= #Menor o igual que:
+						== # Igual: 
+						!= # Distinto:
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Condicionales</h2>
+					<p style="text-align: justify;">Son sentencias para establecer caminos condicionales en python: que se ejecute el codigo DADO el cumplimiento de una condición establecida.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-2|3|4">
+						# Condicionales
+						if # Sentencia condicional "si"
+						elif # Sentencia condicional "Altenartiva"
+						else # Sentencia condicional "sino"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Operadores lógicos</h2>
+					<p style="text-align: justify;"> Permiten realizar operaciones lógicas. </p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-3|4-5|6-7">
+						# Operadores lógicos
+						"or" # Se evaluan dos opciones,
+							# Si la primera es falsa, se escoge la segunda.
+						"and" # Se evaluan dos opciones, 
+							# solo se evalua la segunda si la primera es verdadera.
+						"not" # Se evalua si el valor no esta,
+								# si no esta es True, si si esta, es False.
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Operadores de pertenencia</h2>
+					<p style="text-align: justify;"> Permiten comprobar si un valor o variable se encuentra en una estructura de datos.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-2|3">
+						# Operadores de pertenencia
+						"in"
+						"not in"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Ciclos o Bucles</h2>
+					<p style="text-align: justify;"> Permiten repetir instrucciones tantas veces como queramos.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-2|3">
+						# Bucles
+						"while"
+						"for"
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Funciones</h2>
+					<p style="text-align: justify;"> Permiten crear una funcion propia en python para poder acceder a ella cuando queramos.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-2|3">
+						# Funciones
+						def funcionEgo():
+							print("Soy el mejor programador")
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 4: Introducción a pandas </h3>
+					<h4 style="font-size:30px"> Marzo de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Mi calculadora</li>
+						<li>¿Que es pandas y jupyter?</li>
+						<li>Instalación e integración de pandas/jupyter a VS CODE</li>
+						<li>¿Que es un dataframe?</li>
+						<li>Mi primer dataframe en pandas</li>
+						<li>Que es numpy</li>
+						<li>Conocimiento básico de las librerias/modulos en python</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/6fVp9yhW4hjNH3Sc8" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://discord.gg/pvbwguyt" target="_blank">Grupo de Discord</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Mi calculadora</h2>
+				</section>
+
+				<section data-auto-animate>
+					<h2>¿Que es pandas y jupyter?</h2>
+					<p style="font-size: 30px; text-align: justify;">Pandas es una libreria utilizada para el manejo de datos en python, y jupyter es el entorno de trabajo para usar comodamente dicha libreria.
+						Es decir, toda la tarea de tratamiento de datos como filtrar, depurar, ajustar, creación de variables y demas las realizaremos usando pandas.
+					</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Instalación e integración</h2>
+					<p style="text-align: justify;">Con los siguientes comandos instalaremos pandas y jupyter en nuestro vs-code</p>
+					<pre> <code data-trim data-noescape data-line-numbers="1-2|3|4|5|6">
+						# pandas
+						"pip install pandas" # Instalamos pandas.
+						"pip install jupyter" # Instalamos jupyter.
+						"pip install seaborn" # Instalamos seaborn.
+						"pip install scikit-learn" # Instalamos scikit learn
+						"pip install keras" # Instalamos keras
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">¿Que es un dataframe?</h2>
+					<p style="text-align: justify;">Es un objeto con estructura de base de datos: las filas se llaman registros o entradas y las columnas se llaman campos.</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">numpy</h2>
+					<p style="text-align: justify;">NumPy es una librería de Python especializada en el cálculo numérico y el análisis de datos, especialmente para un gran volumen de datos.
+						Incorpora una nueva clase de objetos llamados arrays que permite representar colecciones de datos de un mismo tipo en varias dimensiones, y funciones muy eficientes para su manipulación.</p>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Librerias</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Deep learning</li>
+						<li>Machine learning</li>
+						<li>Cálculo numérico</li>
+						<li>Visualización</li>
+						<li>Inteligencia artificial explicable</li>
+						<li>Procesamiento de lenguaje natural</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 5: Manejo de DataFrames I </h3>
+					<h4 style="font-size:30px"> Abril de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Importar dataframes</li>
+						<li>Diferentes formas de mostrar el dataframe</li>
+						<li>Atributos, funciones y metodos</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/kqb3bSqQAujvxZAg7" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Importar Dataframes</h2>
+					<p style="font-size: 30px; text-align: justify;">Existen varios formatos y varias maneras para trabajar con dataframes en pandas. 
+						Los formatos mas utilizados son archivos de excel, csv, dta.
+						El metodo para importar dichos archivos cambiara dependiendo del tipo.
+						Veamos algunos ejemplos:
+						<pre> <code data-trim data-noescape data-line-numbers="">
+							# Importar
+							"pd.read_excel('base_de_datos.xlsx')" # excel
+							"pd.read_csv('datos.csv')" # csv
+							"pd.read_stata('datos.dta')" #dta
+						</code></pre>
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Diferentes formas de mostrar el DataFrame</h2>
+					<p style="font-size: 30px; text-align: justify;">En pandas dependiendo de la necesidad que tengamos podemos mostrar de diferentes formas el dataframe; un resumen, primeros 5 datos, entre otras.
+					</p>
+					<pre> <code data-trim data-noescape data-line-numbers="">
+						# metodos para hacerlo
+						"head()" # 5 primeros datos.
+						"tail()" # 5 ultimos datos.
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Selección de columnas</h2>
+					<p style="text-align: justify;">Podemos seleccionar con que columnas queremos realizar nuestro análisis:</p>
+					<pre> <code data-trim data-noescape data-line-numbers="">
+						# Seleccion de columnas
+						"[metodo corchetes]" # Corchetes
+						"." # Metodo del punto.
+
+						# ¿Podemos seleccionar mas de una columna?
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 style="font-size: 30px;">Atributos, funciones y metodos</h2>
+					<p style="text-align: justify;font-size: 20px;">Los atributos son las caracteristicas de una base de datos o sus propiedades estructurales: que tipo de datos contiene, sus dimensiones, etc.
+					Las funciones y metodos son algoritmos que podemos crear o manipular para realizar un analisis de datos efectivo.</p>
+					<pre> <code data-trim data-noescape data-line-numbers="">
+						# Atributos
+						"shape" # Dimensiones del dataframe
+						"index" # Comportamiento del dataframe
+						"columns" # obtener el nombre de las columnas 
+						"dtype" #obtener el tipo de datos de las variables
+
+						# metodos
+						"info()" #resumen del dataframe
+						"describe()" #summary del dataframe
+
+						#Funciones
+						"len" #numero de filas
+						"max" #maximo index
+						"min" #minimo index
+						"type" #tipo de data
+						"round" #redondear valores del dataframe
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 6: Manejo de DataFrames II </h3>
+					<h4 style="font-size:30px"> Abril de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Agregar nueva columna</li>
+						<li>Operaciones en columnas y filas</li>
+						<li>Ordenar DataFrame</li>
+						<li>Convertir de formato long-wide</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/nfofa9MfNqVz5Vw67" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Agregar columnas</h2>
+					<p style="font-size: 30px; text-align: justify;">En excel es trivial agregar una nueva columna, puesto que la hoja de cálculo viene con dimensiones especificadas y es el usuario quien decide que espacios utilizara. En cambio en Python hay diferentes parametros a considerar para agregar una nueva columna:
+						Dependiendo de nuestra necesidad podemos crear una columna de multiples formas:
+						<pre> <code data-trim data-noescape data-line-numbers="">
+							# Agregar columna
+							"Valor constante" 
+							"Valores de un array" 
+						</code></pre>
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Operaciones en columnas y filas</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						Realizar operaciones entre filas o columnas es el tipo de operación mas básico que se puede realizar y python ofrece muchos metodos para esto:
+						Recordemos que las operaciones entre filas y columnas son las mas esenciales.
+					</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Ordenar DataFrames</h2>
+					<p style="text-align: justify;">Podemos ordenar el DataFrame de la manera que mas nos convenga:</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Formato Long - Wide</h2>
+					<p style="text-align: justify;">Existen dos tipos de formatos para las bases de datos:</p>
+					<img src="https://qph.cf2.quoracdn.net/main-qimg-dd0dabfa8abd51156906518c0e04f684-pjlq" alt="">
+					<p style="text-align: justify;">Y con python podemos convertir al que mas nos convenga cualquier base de datos utilizando el metodo pivot.</p>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 7: Manejo básico de archivos </h3>
+					<h4 style="font-size:30px"> Abril de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Busqueda y descarga de bases de datos</li>
+						<li>Data Viewer</li>
+						<li>Filtros, tratamientos y estadisticas básicas de la base de datos</li>
+						<li>Grafico de lineas</li>
+						<li>Exportar los datos luego de tratados</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/VTYReEEBNDKKdKje6" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Busqueda y descarga de bases de datos</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						Tenemos dos fuentes importantes de bases de datos como economistas: las bases de datos del DANE, y las bases de datos del Banco Mundial.
+						<br>
+						<a href="https://www.dane.gov.co/index.php/estadisticas-por-tema">DANE</a>
+						<br>
+						<a href="https://data.worldbank.org/indicator">World Data Bank</a>
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Data Viewer</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						El Data Viewer es una herramienta integrada con jupyter para ayudarnos a echarle un vistazo rapido a nuestra base de datos, encontrar valores, y dicho de otra manera es la ventana visual de nuestra base de datos.
+					</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Filtro, tratamiento y estadisticas basicas de la base de datos</h2>
+					<p style="text-align: justify;">1. Precios mayoristas <br> 2. Inflación</p>
+				</section>
+
+				<section>
+					<h2 >Gráficos básicos</h2>
+				</section>
+
+				<section>
+					<h2>Exportar nuestros datos</h2>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 8: Manejo básico de archivos II </h3>
+					<h4 style="font-size:30px"> Mayo de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Estrategias para depurar bases de datos</li>
+						<li>Diccionarios de Datos</li>
+						<li>Filtros, tratamientos y estadisticas básicas de la base de datos</li>
+						<li>Grafico descriptivos</li>
+						<li>Exportar los datos luego de tratados</li>
+						<li>Generar Documento de Trabajo</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/rsobq6JBBYJfrX6o7" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Estrategias para depurar bases de datos</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						1. Identificar los errores.
+						<br>
+						2. Mirar si tenemos datos duplicados.
+						<br>
+						3. Recodificar variables segun nuestras necesidades.
+						<br>
+						4. Tratamiento de los datos.
+						<br>
+						5. Exportar resultados.
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Diccionario de Datos</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						El diccionario de datos es una herramienta utilizada en bases de datos que por su naturaleza trabaja con muchas variables.
+						<br>
+						Es util aprender a manejar con soltura este tipo de herramientas pues nos ahorran tiempo y permiten comprender cualquier estructura de cualquier base de datos.
+						<br>
+						NOTA: NO todas las bases de datos van a trabajar con diccionarios de Datos, pero es probable que entre mas compleja sea, el uso de un diccionario puede ser muy útil.
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Diccionario de Datos de nuestra base de datos</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						AC20 = ACT_Composition_Score
+						<br>
+						AC21 = SAT_Total_Score
+						<br>
+						AC22 = Parental level of education
+						<br>
+						AC23 = Parental Income
+						<br>
+						AC24 = High School GPA
+						<br>
+						AC25 = Collegue GPA
+						<br>
+						AC26 = Years to graduate
+					</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Filtro, tratamiento y estadisticas basicas de la base de datos</h2>
+					<p style="text-align: justify;"></p>
+				</section>
+
+				<section>
+					<h2 >Gráficos descriptivos</h2>
+					<p style="text-align:left;justify-content:left;">
+						1. Histogramas.
+						<br>
+						2. Graficos de dispersión.
+					</p>
+				</section>
+
+				<section>
+					<h2>Exportar nuestros datos</h2>
+				</section>
+
+				<section>
+					<h2>Generar el documento de trabajo</h2>
+					<p>Utilizaremos Markdown para generar un documento de trabajo presentable utilizando el mismo jupyter.</p>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 9: Regresión lineal y visualización de Datos </h3>
+					<h4 style="font-size:30px"> Mayo de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Regresión simple con StatsModels</li>
+						<li>Regresión Multiple con StatsModels</li>
+						<li>Regresión Multiple con Scikit-learn</li>
+						<li>El Arte de Graficar</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/3Sggk1ksQwaJpt8N6" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Regresión Simple con StatsModels</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						<ul style="list-style: '👌';text-align: justify;">
+							<li>¿Que es una regresión?</li>
+							<li>Tipos de regresión</li>
+							<li>Construcción del modelo</li>
+							<li>Graficando el modelo</li>
+						</ul>
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Regresión Multiple con StatsModels</h2>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Regresión Multiple con Scikit-learn</h2>
+				</section>
+
+				<section>
+					<h2>El arte de Graficar</h2>
+					<p><a href="https://seaborn.pydata.org/examples/index.html" target="_blank">Galeria</a></p>
+				</section>
+
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 10: Diversión </h3>
+					<h4 style="font-size:30px"> Mayo de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Feedback del curso</li>
+						<li>Ambiente de Chill</li>
+						<li>Trabajo autodidacta</li>
+						<li>Fin del curso</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/GsPEYD94GytYRwdL9" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					Ambiente de Chill
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
